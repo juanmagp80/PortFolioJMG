@@ -62,7 +62,7 @@ export function HorizontalCard2() {
             >
               Sobre mi
             </Typography>
-            <Typography color="gray" className="mb-8 font-normal">
+            <Typography color="gray" className="mb-8 font-normal text-left">
               Hola, soy Juanma. Apasionado de la programación web y el
               desarrollo Front-end, busco constantemente expandir mis
               habilidades en este fascinante campo. Además de la tecnología, mi

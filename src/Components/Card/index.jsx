@@ -62,7 +62,7 @@ export function HorizontalCard() {
             >
               Juanma Garrido
             </Typography>
-            <Typography color="gray" className="mb-6 font-normal">
+            <Typography color="gray" className="mb-6 font-normal text-left">
               Entusiasta de la programación web, me sumerjo en el mundo del
               Front-end. Aunque estoy empezando en este mundo apasionante, mi
               dedicación por aprender es incansable. Apasionado por la creación
