@@ -17,11 +17,11 @@ export function HorizontalCard() {
       ref={ref}
       className="p-2 flex justify-center items-center mb-40 mt-40 bg-indigo-500"
     >
-      <Card className="w-full max-w-[70rem] h-[30rem] flex-row shadow-3xl bg-blue-400 overflow-hidden">
+      <Card className="w-full max-w-[70rem] md:h-[30rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-2/5 shrink-0 rounded-r-none"
+          className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
           <Fade
             direction="left"
@@ -52,13 +52,13 @@ export function HorizontalCard() {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-20 font-poppins text-3xl uppercase">
+              <Typography className="mt-4 md:mt-20 font-poppins text-2xl md:text-3xl uppercase">
                 FRONT-END DEVELOPER
               </Typography>
             </Fade>
             <Typography
               variant="h1"
-              className="mb-4 mt-4 font-poppins text-white font-bold text-5xl"
+              className="mb-4 mt-4 font-poppins text-white font-bold text-4xl md:text-5xl"
             >
               Juanma Garrido
             </Typography>

@@ -8,12 +8,12 @@ function index() {
         <nav className="flex px-8 py-5 justify-between z-30 items-center shadow-3xl bg-blue-400 bg-gradient-to-r-porfolio fixed top-0 left-0 mb-5 w-full ">
           <a
             href="/"
-            className=" text-white font-poppins text-3xl md:text-4xl "
+            className=" text-white font-poppins text-3xl md:text-3xl lg:text-4l"
           >
             {`</Juanma Garrido/>`}
           </a>
 
-          <ul className="flex space-x-4 font-poppin text-white font-bold">
+          <ul className="flex flex-col md:flex-row space-y-2 md:space-x-4 font-poppin text-white font-bold">
             <li>
               <a href="#section1">Sobre Mi</a>
             </li>
@@ -24,9 +24,12 @@ function index() {
               <a href="#section3">Experiencia</a>
             </li>
           </ul>
-          <a href="#_" className="relative inline-block text-lg group">
-            <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-              <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+          <a
+            href="#_"
+            className="relative inline-block text-sm md:text-lg group"
+          >
+            <span className="relative z-10 block px-3 md:px-5 py-2 md:py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+              <span className="absolute inset-0 w-full h-full px-3 md:px-5 py-2 md:py-3 rounded-lg bg-gray-50"></span>
               <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
               <span className="relative">Contáctame</span>
             </span>
