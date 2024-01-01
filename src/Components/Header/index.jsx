@@ -3,9 +3,9 @@ import Logo from "../../../public/default.png";
 
 function index() {
   return (
-    <header className="bg-blue-400 text-white p-4 flex justify-between items-center">
+    <header className="bg-blue-400 text-white p-4 flex justify-between">
       <div className="p-3 pb-0 md:px-16 overflow-hidden">
-        <nav className="flex px-8 py-5 justify-between z-30 items-center shadow-3xl bg-blue-400 bg-gradient-to-r-porfolio fixed top-0 left-0 mb-5 w-full ">
+        <nav className="flex px-8 py-5 justify-between z-30 shadow-3xl bg-blue-400 bg-gradient-to-r-porfolio fixed top-0 left-0 mb-5 w-full ">
           <a
             href="/"
             className=" text-white font-poppins text-3xl md:text-3xl lg:text-4l"
@@ -13,15 +13,30 @@ function index() {
             {`</Juanma Garrido/>`}
           </a>
 
-          <ul className="flex flex-col md:flex-row space-y-2 md:space-x-4 font-poppin text-white font-bold">
+          <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row space-y-2 md:space-x-4 font-poppins text-white font-bold">
             <li>
-              <a href="#section1">Sobre Mi</a>
+              <a
+                href="#section1"
+                className="text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+              >
+                Sobre Mi
+              </a>
             </li>
             <li>
-              <a href="#section2">Proyectos</a>
+              <a
+                href="#section2"
+                className="text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+              >
+                Proyectos
+              </a>
             </li>
             <li>
-              <a href="#section3">Experiencia</a>
+              <a
+                href="#section3"
+                className="text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+              >
+                Experiencia
+              </a>
             </li>
           </ul>
           <a

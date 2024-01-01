@@ -10,6 +10,7 @@ import { useState } from "react";
 import "../../App.css";
 import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
+import Container from "../Container";
 
 export function HorizontalCard3() {
   const { ref, inView } = useInView({
@@ -23,23 +24,7 @@ export function HorizontalCard3() {
           floated={false}
           className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
-          <div className="w-2/3 h-2/3 bg-blue-400 flex items-center justify-center relative">
-            <h1 className="text-xl md:text-2xl text-black font-poppins animate-circle">
-              JAVASCRIPT
-            </h1>
-            <h1 className="text-xl md:text-2xl text-black font-poppins animate-circle">
-              REACT
-            </h1>
-            <h1 className="text-xl md:text-2xl text-black font-poppins animate-circle">
-              TAILWIND
-            </h1>
-            <h1 className="text-xl md:text-2xl text-black font-poppins animate-circle">
-              HTML
-            </h1>
-            <h1 className="text-xl md:text-2xl text-black font-poppins animate-circle">
-              CSS
-            </h1>
-          </div>
+          <Container />
         </CardHeader>
         <Fade
           direction="right"
