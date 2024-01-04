@@ -11,6 +11,7 @@ import "../../App.css";
 import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
 import Container from "../Container";
+import TechCircle from "../TechCircle";
 
 export function HorizontalCard3() {
   const { ref, inView } = useInView({
@@ -24,7 +25,7 @@ export function HorizontalCard3() {
           floated={false}
           className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
-          <Container />
+          <TechCircle />
         </CardHeader>
         <Fade
           direction="right"
