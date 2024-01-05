@@ -5,6 +5,8 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import SignupForm from "../Formulario";
+
 import { useEffect } from "react";
 import { useState } from "react";
 import "../../App.css";
@@ -13,19 +15,19 @@ import { useInView } from "react-intersection-observer";
 import Container from "../Container";
 import TechCircle from "../TechCircle";
 
-export function HorizontalCard3() {
+export function HorizontalCard4() {
   const { ref, inView } = useInView({
     triggerOnce: false,
   });
   return (
-    <div className="flex justify-center items-center  bg-indigo-500">
+    <div className="flex justify-center items-center mt-40 bg-indigo-500">
       <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}
           className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
-          <TechCircle />
+          <SignupForm />
         </CardHeader>
         <Fade
           direction="right"
@@ -43,7 +45,7 @@ export function HorizontalCard3() {
               when={inView}
             >
               <Typography className="mt-4 md:mt-20 font-poppins text-2xl md:text-3xl">
-                Tecnologías
+                Contacto
               </Typography>
             </Fade>
             <Typography
@@ -74,4 +76,4 @@ export function HorizontalCard3() {
     </div>
   );
 }
-export default HorizontalCard3;
+export default HorizontalCard4;
