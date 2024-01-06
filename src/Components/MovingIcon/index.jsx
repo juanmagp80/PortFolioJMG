@@ -30,11 +30,11 @@ const IconMotionComponent = () => {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="flex mb-60 flex-wrap">
+      <div className="flex mb-10 md:mb-60 flex-wrap">
         {icons.map((icon, index) => (
           <motion.div
             key={index}
-            className="m-5 text-3xl"
+            className="m-2 md:m-5 text-3xl"
             variants={iconVariants}
             initial="initial"
             animate="animate"

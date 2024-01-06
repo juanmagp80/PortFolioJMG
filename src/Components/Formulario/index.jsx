@@ -27,7 +27,7 @@ const SignupForm = () => {
           }, 400);
         }}
       >
-        <Form className="flex flex-col mb-40 p-6 bg-blue-400 border-2 rounded shadow-3xl space-y-4 w-72">
+        <Form className="flex flex-col mb-20 p-6 bg-blue-400 border-2 rounded shadow-3xl space-y-4 w-72">
           <label htmlFor="firstName" className="font-medium text-gray-700">
             Nombre
           </label>

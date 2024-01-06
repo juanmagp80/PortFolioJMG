@@ -20,11 +20,11 @@ export function HorizontalCard3() {
   });
   return (
     <div className="flex justify-center items-center  bg-indigo-500">
-      <Card className="w-ful max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
+      <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}
-          className=" bg-blue-400 w-full md:w-2/5 shrink-0 rounded-r-none"
+          className=" bg-blue-400  md:w-2/5 shrink-0 rounded-r-none"
         >
           <AnimatedText />
         </CardHeader>
@@ -43,7 +43,7 @@ export function HorizontalCard3() {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 md:mt-20 font-poppins text-2xl md:text-3xl">
+              <Typography className="mt-1 md:mt-20 font-poppins text-2xl md:text-3xl">
                 Tecnologías
               </Typography>
             </Fade>
