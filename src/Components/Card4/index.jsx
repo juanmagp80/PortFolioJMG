@@ -49,30 +49,14 @@ export function HorizontalCard4({ formRef }) {
               when={inView}
             >
               <Typography className="mt-4 md:mt-20 font-poppins text-2xl md:text-3xl">
-                Contacto
+                Contacta conmigo
               </Typography>
             </Fade>
             <Typography
               variant="h1"
               className="mb-4 mt-4 font-poppins text-white font-bold md:text-5xl"
             >
-              Aprendizaje Constante
-            </Typography>
-            <Typography color="gray" className="mb-8 font-normal text-left">
-              Mi trayecto en el mundo del desarrollo web ha sido emocionante y
-              lleno de aprendizaje. Comencé con las bases: HTML para la
-              estructura, CSS para el diseño y JavaScript para la
-              interactividad. Luego, avancé hacia librerías como React, que me
-              han permitido crear aplicaciones más dinámicas. Además, he
-              explorado herramientas como Tailwind y Bootstrap para agilizar el
-              desarrollo. En el ámbito de la gestión de versiones, me
-              familiaricé con Git y Github para control de versiones y
-              colaboración en proyectos. He complementado mi aprendizaje con
-              certificaciones de plataformas como Udemy, Platzi y Codecademy,
-              obteniendo el certificado de Front-End Developer de Meta, validado
-              por Coursera. Sigo comprometido con el aprendizaje continuo y
-              emocionado por seguir explorando nuevas tecnologías en este
-              apasionante campo del desarrollo web.
+              Estaré encantado de atenderte
             </Typography>
           </CardBody>
         </Fade>

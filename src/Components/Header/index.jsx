@@ -6,16 +6,16 @@ import { useRef } from "react";
 function index({ handleContactClick, handleSobreMiClick }) {
   return (
     <header
-      className=" text-white flex pt-24 justify-between fixed top-0 w-full z-50  backdrop-blur-xl shadow-3xl bg-gradient-to-r-porfolio"
+      className=" text-white flex pt-24 justify-between items-center text-center fixed top-0 w-full z-50  backdrop-blur-xl shadow-3xl bg-gradient-to-r-porfolio"
       style={{ backgroundColor: "rgba(37, 99, 235, 0.2)" }}
     >
       <div className="p-3 pb-0 md:px-16 overflow-hidden">
-        <nav className="flex px-8 py-5 justify-between z-30 fixed top-0 left-0 mb-5 w-full ">
+        <nav className="flex px-2 py-4 justify-between z-30 fixed top-0 left-1 mb-5 w-full ">
           <a
             href="/"
-            className=" text-white font-poppins text-xl md:text-3xl lg:text-4l"
+            className=" text-white text-base text-center flex flex-col items-center text font-poppins md:text-3xl lg:text-4l"
           >
-            {`</Juanma Garrido/>`}
+            {`</Juanma`} <br /> <span className="ml-6">{`Garrido/>`}</span>
           </a>
 
           <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">
