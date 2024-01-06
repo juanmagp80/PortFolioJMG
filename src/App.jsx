@@ -45,7 +45,7 @@ function App() {
         unmountOnExit
       >
         <div className="flex flex-col items-center justify-center h-screen bg-blue-500">
-          <img className="w-72 h-72" src={"../public/waving.png"} alt="logo" />
+          <img className="w-72 h-72" src={"./waving.png"} alt="logo" />
           <p className="text-white text-3xl font-poppins">¡Hola! Soy Juanma</p>
         </div>
       </CSSTransition>

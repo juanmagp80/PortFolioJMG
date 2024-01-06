@@ -5,7 +5,7 @@ const CardBio = () => {
     <div className="fixed left-0 top-14 mt-4 m-4 p-4 bg-indigo-700 rounded-lg shadow-3xl h-80">
       <img
         className="w-24 h-24 rounded-full mx-auto"
-        src="../../../public/sonrisa.png"
+        src="./sonrisa.png"
         alt="Tu nombre"
       />
       <div className="text-center mt-2 font-poppins">
