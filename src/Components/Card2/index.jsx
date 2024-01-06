@@ -8,20 +8,20 @@ import {
 import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
 
-export function HorizontalCard2() {
+export function HorizontalCard2({ sobremiRef }) {
   const { ref, inView } = useInView({
     triggerOnce: false,
   });
   return (
     <div
-      ref={ref}
-      className="flex justify-center items-center mb-40 bg-indigo-500"
+      className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500"
+      ref={sobremiRef}
     >
       <Card className="w-full max-w-[70rem] md:h-[30rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
+          className="m-0 bg-blue-400 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
           <Fade
             direction="left"

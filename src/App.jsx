@@ -8,18 +8,38 @@ import HorizontalCard2 from "./Components/Card2/index.jsx";
 import HorizontalCard3 from "./Components/Card3/index.jsx";
 import HorizontalCard4 from "./Components/Card4/index.jsx";
 import Footer from "./Components/Footer/index.jsx";
+import CardBio from "./Components/CardBio/index.jsx";
+import { useRef } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
+  const formRef = useRef(null);
+  const sobremiRef = useRef(null);
 
+  const handleContactClick = () => {
+    formRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+  const handleSobreMiClick = () => {
+    sobremiRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
   return (
     <>
       <div className="App bg-indigo-500 min-h-screen">
-        <Header />
+        <Header
+          handleContactClick={handleContactClick}
+          handleSobreMiClick={handleSobreMiClick}
+        />
         <HorizontalCard />
-        <HorizontalCard2 />
+        <HorizontalCard2 sobremiRef={sobremiRef} />
         <HorizontalCard3 />
-        <HorizontalCard4 />
+        <HorizontalCard4 formRef={formRef} />
+        <CardBio />
         <Footer />
       </div>
     </>

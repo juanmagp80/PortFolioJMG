@@ -15,6 +15,8 @@ export default {
       },
       boxShadow: {
         "3xl": "4.0px 8.0px 8.0px rgba(0,0,0,0.38)",
+        purple: "5px 5px 0px 0px rgba(109,40,217)",
+        gray: "4px -6px 5px 2px #edf2f7,0px 3px 8px 0px #edf2f7",
       },
       gradients: {
         portfolio: [

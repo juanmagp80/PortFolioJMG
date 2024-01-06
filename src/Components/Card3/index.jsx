@@ -23,7 +23,7 @@ export function HorizontalCard3() {
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 w-full md:w-2/5 shrink-0 rounded-r-none"
+          className="m-0 bg-blue-400 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
           <TechCircle />
         </CardHeader>

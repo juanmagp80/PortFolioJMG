@@ -5,7 +5,7 @@ import * as Yup from "yup";
 const SignupForm = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="mb-5 text-lg font-bold">Formulario de Registro</h1>
+      <h1 className="mb-5 text-lg font-bold">Contáctame</h1>
       <Formik
         initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
         validationSchema={Yup.object({
