@@ -66,3 +66,39 @@
 .animate-marquee {
   animation: marquee 5s linear infinite;
 }
+.opacity-0 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.opacity-100 {
+  opacity: 1;
+  visibility: visible;
+}
+.loading-screen {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.fade-enter {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+}

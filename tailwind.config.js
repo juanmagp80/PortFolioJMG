@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backdropFilter: {
+        none: "none",
+        blur: "blur(20px)",
+      },
       animation: {
         circle: "circle 2s infinite linear",
 
@@ -25,6 +29,11 @@ export default {
           "rgba(255,255,255,.066) 100%",
         ],
       },
+    },
+  },
+  variants: {
+    extend: {
+      backdropFilter: ["responsive"],
     },
   },
   plugins: [],

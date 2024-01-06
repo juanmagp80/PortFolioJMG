@@ -5,9 +5,12 @@ import { useRef } from "react";
 
 function index({ handleContactClick, handleSobreMiClick }) {
   return (
-    <header className="bg-blue-400 text-white p-4 flex justify-between z-50">
+    <header
+      className=" text-white flex pt-16 justify-between fixed top-0 w-full z-50  backdrop-blur-xl shadow-3xl bg-gradient-to-r-porfolio"
+      style={{ backgroundColor: "rgba(37, 99, 235, 0.2)" }}
+    >
       <div className="p-3 pb-0 md:px-16 overflow-hidden">
-        <nav className="flex px-8 py-5 justify-between z-30 shadow-3xl bg-blue-400 bg-gradient-to-r-porfolio fixed top-0 left-0 mb-5 w-full ">
+        <nav className="flex px-8 py-5 justify-between z-30 fixed top-0 left-0 mb-5 w-full ">
           <a
             href="/"
             className=" text-white font-poppins text-3xl md:text-3xl lg:text-4l"
