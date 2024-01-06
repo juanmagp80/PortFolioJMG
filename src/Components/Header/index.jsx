@@ -15,7 +15,8 @@ function index({ handleContactClick, handleSobreMiClick }) {
             href="/"
             className=" text-white text-base text-center flex flex-col items-center text font-poppins md:text-3xl lg:text-4l"
           >
-            {`</Juanma`} <br /> <span className="ml-6">{`Garrido/>`}</span>
+            {`</Juanma`} <b className="md:hidden ml-6" />{" "}
+            <span className="hidden md:inline ml-6">{`Garrido/>`}</span>
           </a>
 
           <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">

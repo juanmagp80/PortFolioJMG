@@ -12,6 +12,7 @@ import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
 import Container from "../Container";
 import TechCircle from "../TechCircle";
+import AnimatedText from "../MovingIcon";
 
 export function HorizontalCard3() {
   const { ref, inView } = useInView({
@@ -19,13 +20,13 @@ export function HorizontalCard3() {
   });
   return (
     <div className="flex justify-center items-center  bg-indigo-500">
-      <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
+      <Card className="w-ful max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 bg-blue-400 w-full md:w-2/5 shrink-0 rounded-r-none"
+          className=" bg-blue-400 w-full md:w-2/5 shrink-0 rounded-r-none"
         >
-          <TechCircle />
+          <AnimatedText />
         </CardHeader>
         <Fade
           direction="right"

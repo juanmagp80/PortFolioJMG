@@ -1,61 +1,51 @@
-import React, { useEffect, useRef } from "react";
-import { FaReact, FaAngular, FaVuejs } from "react-icons/fa";
+import React from "react";
+import { motion } from "framer-motion";
+import { FaReact, FaGithub, FaHtml5, FaNode } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiTailwindcss } from "react-icons/si";
 
-const icons = {
-  react: FaReact,
-  angular: FaAngular,
-  vue: FaVuejs,
-};
+// Puedes elegir los iconos que desees
 
-const MovingIcon = ({ icon, containerWidth, containerHeight }) => {
-  const ref = useRef(null);
-  const direction = useRef({
-    x: Math.random() > 0.5 ? 1 : -1,
-    y: Math.random() > 0.5 ? 1 : -1,
-  });
+const IconMotionComponent = () => {
+  const icons = [
+    <FaReact />,
+    <SiTailwindcss />,
+    <FaGithub />,
+    <FaHtml5 />,
+    <IoLogoJavascript />,
+    <FaNode />,
+  ];
 
-  useEffect(() => {
-    const moveIcon = () => {
-      if (!ref.current) return;
-
-      const rect = ref.current.getBoundingClientRect();
-
-      if (rect.left < 0 || rect.right > containerWidth) {
-        direction.current.x *= -1;
-      }
-
-      if (rect.top < 0 || rect.bottom > containerHeight) {
-        direction.current.y *= -1;
-      }
-
-      ref.current.style.left = `${rect.left + direction.current.x}px`;
-      ref.current.style.top = `${rect.top + direction.current.y}px`;
-
-      requestAnimationFrame(moveIcon);
-    };
-
-    setTimeout(() => {
-      if (ref.current) {
-        ref.current.style.left = `${Math.random() * (containerWidth - 50)}px`;
-        ref.current.style.top = `${Math.random() * (containerHeight - 50)}px`;
-
-        moveIcon();
-      }
-    }, 0);
-  }, [containerHeight, containerWidth]);
-
-  const Icon = icons[icon];
+  const iconVariants = {
+    initial: { opacity: 4, y: 100 },
+    animate: (index) => ({
+      opacity: 8,
+      y: 0,
+      x: Math.random() * 150 - 75,
+      scale: Math.random() * 0.5 + 2.5,
+      rotate: Math.random() * 260,
+      transition: { duration: 10, repeat: Infinity, yoyo: Infinity },
+    }),
+  };
 
   return (
-    <div
-      ref={ref}
-      style={{
-        position: "absolute",
-      }}
-    >
-      <Icon size={50} />
+    <div className="flex justify-center items-center h-screen">
+      <div className="flex mb-60 flex-wrap">
+        {icons.map((icon, index) => (
+          <motion.div
+            key={index}
+            className="m-5 text-3xl"
+            variants={iconVariants}
+            initial="initial"
+            animate="animate"
+            custom={index}
+          >
+            {icon}
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default MovingIcon;
+export default IconMotionComponent;
