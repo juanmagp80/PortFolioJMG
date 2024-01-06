@@ -17,7 +17,7 @@ export function HorizontalCard() {
       ref={ref}
       className="p-2 flex justify-center rounded-xl items-center mb-40 mt-40 bg-indigo-500"
     >
-      <Card className="w-full max-w-[70rem] md:h-[30rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden">
+      <Card className="w-full max-w-[70rem] md:h-[30rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden z-20 md:z-40">
         <CardHeader
           shadow={false}
           floated={false}

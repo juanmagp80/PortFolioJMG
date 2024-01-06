@@ -2,14 +2,14 @@ import React from "react";
 
 const CardBio = () => {
   return (
-    <div className="fixed left-0 top-14 mt-4 m-4 p-4 bg-indigo-700 rounded-lg shadow-3xl h-80">
+    <div className="md:block hidden fixed left-0 top-14 mt-4 m-4 p-4 bg-indigo-700 rounded-lg shadow-3xl h-auto md:h-80 z-10 md:z-30">
       <img
         className="w-24 h-24 rounded-full mx-auto"
         src="./sonrisa.png"
         alt="Tu nombre"
       />
       <div className="text-center mt-2 font-poppins">
-        <h2 className="text-xl text-orange-400 ">Juanma Garrido</h2>
+        <h2 className="text-lg md:text-xl text-orange-400 ">Juanma Garrido</h2>
         <a
           href="mailto:juanmagpdev@gmail.com"
           className="text-white text-xs hover:underline"

@@ -25,7 +25,7 @@ export function HorizontalCard4({ formRef }) {
       className="flex justify-center items-center mt-40 bg-indigo-500"
       ref={formRef}
     >
-      <Card className="w-full max-w-[70rem] md:h-[42rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden z-10">
+      <Card className="w-full max-w-[70rem] md:h-[42rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden z-20 md:z-40">
         <CardHeader
           shadow={false}
           floated={false}

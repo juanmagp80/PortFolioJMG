@@ -13,7 +13,7 @@ function index({ handleContactClick, handleSobreMiClick }) {
         <nav className="flex px-8 py-5 justify-between z-30 fixed top-0 left-0 mb-5 w-full ">
           <a
             href="/"
-            className=" text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+            className=" text-white font-poppins text-2xl md:text-3xl lg:text-4l"
           >
             {`</Juanma Garrido/>`}
           </a>
@@ -22,7 +22,7 @@ function index({ handleContactClick, handleSobreMiClick }) {
             <li>
               <a
                 href="#section1"
-                className="text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+                className="text-white font-poppins text-2xl md:text-3xl lg:text-4l"
                 onClick={handleSobreMiClick}
               >
                 Sobre Mi
@@ -31,7 +31,7 @@ function index({ handleContactClick, handleSobreMiClick }) {
             <li>
               <a
                 href="#section2"
-                className="text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+                className="text-white font-poppins text-2xl md:text-3xl lg:text-4l"
               >
                 Proyectos
               </a>
@@ -39,7 +39,7 @@ function index({ handleContactClick, handleSobreMiClick }) {
             <li>
               <a
                 href="#section3"
-                className="text-white font-poppins text-3xl md:text-3xl lg:text-4l"
+                className="text-white font-poppins text-2xl md:text-3xl lg:text-4l"
               >
                 Experiencia
               </a>

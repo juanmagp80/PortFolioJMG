@@ -19,7 +19,7 @@ export function HorizontalCard3() {
   });
   return (
     <div className="flex justify-center items-center  bg-indigo-500">
-      <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden">
+      <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}

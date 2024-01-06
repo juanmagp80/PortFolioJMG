@@ -17,7 +17,7 @@ export function HorizontalCard2({ sobremiRef }) {
       className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500"
       ref={sobremiRef}
     >
-      <Card className="w-full max-w-[70rem] md:h-[30rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden">
+      <Card className="w-full max-w-[70rem] md:h-[30rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden z-20 md:z-40">
         <CardHeader
           shadow={false}
           floated={false}
