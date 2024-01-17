@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import Logo from "../../../public/default.png";
 
 import { useRef } from "react";
+import { VisibilityContext } from "../../context";
+import CardBio from "../CardBio";
 
 function index({ handleContactClick, handleSobreMiClick }) {
+  const { setIsVisible, isVisible } = useContext(VisibilityContext);
+  const handleClick = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <header
       className=" text-white flex pt-24 justify-between items-center text-center fixed top-0 w-full z-50  backdrop-blur-xl shadow-3xl bg-gradient-to-r-porfolio"
       style={{ backgroundColor: "rgba(37, 99, 235, 0.2)" }}
     >
-      <div className="p-3 pb-0 md:px-16 overflow-hidden">
+      <div className="p-3 pb-0 md:px-16 overflow-hidden hover:cursor-pointer">
         <nav className="flex px-2 py-4 justify-between z-30 fixed top-0 left-1 mb-5 w-full ">
           <a
-            href="/"
+            onClick={handleClick}
             className=" text-white text-base text-center flex flex-col items-center text font-poppins md:text-3xl lg:text-4l"
           >
             {`</Juanma`} <b className="md: hidden ml-6" />{" "}
             <span className=" md:inline ml-6">{`Garrido/>`}</span>
+            <CardBio className="slide-right" />
           </a>
 
           <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">

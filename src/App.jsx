@@ -7,10 +7,12 @@ import HorizontalCard2 from "./Components/Card2/index.jsx";
 import HorizontalCard3 from "./Components/Card3/index.jsx";
 import HorizontalCard4 from "./Components/Card4/index.jsx";
 import Footer from "./Components/Footer/index.jsx";
-import CardBio from "./Components/CardBio/index.jsx";
+
+import { VisibilityContext } from "./context/index.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
   const formRef = useRef(null);
   const sobremiRef = useRef(null);
   const [loading, setLoading] = useState(true);
@@ -38,31 +40,34 @@ function App() {
 
   return (
     <>
-      <CSSTransition
-        in={loading}
-        timeout={1000}
-        classNames="fade"
-        unmountOnExit
-      >
-        <div className="flex flex-col items-center justify-center h-screen bg-blue-500">
-          <img className="w-72 h-72" src={"./waving.png"} alt="logo" />
-          <p className="text-white text-3xl font-poppins">¡Hola! Soy Juanma</p>
-        </div>
-      </CSSTransition>
-      {!loading && (
-        <div className="App bg-indigo-500 pt-2 min-h-screen">
-          <Header
-            handleContactClick={handleContactClick}
-            handleSobreMiClick={handleSobreMiClick}
-          />
-          <HorizontalCard />
-          <HorizontalCard2 sobremiRef={sobremiRef} />
-          <HorizontalCard3 />
-          <HorizontalCard4 formRef={formRef} />
-          <CardBio />
-          <Footer />
-        </div>
-      )}
+      <VisibilityContext.Provider value={{ isVisible, setIsVisible }}>
+        <CSSTransition
+          in={loading}
+          timeout={1000}
+          classNames="fade"
+          unmountOnExit
+        >
+          <div className="flex flex-col items-center justify-center h-screen bg-blue-500">
+            <img className="w-72 h-72" src={"./waving.png"} alt="logo" />
+            <p className="text-white text-3xl font-poppins">
+              ¡Hola! Soy Juanma
+            </p>
+          </div>
+        </CSSTransition>
+        {!loading && (
+          <div className="App bg-indigo-500 pt-2 min-h-screen">
+            <Header
+              handleContactClick={handleContactClick}
+              handleSobreMiClick={handleSobreMiClick}
+            />
+            <HorizontalCard />
+            <HorizontalCard2 sobremiRef={sobremiRef} />
+            <HorizontalCard3 />
+            <HorizontalCard4 formRef={formRef} />
+            <Footer />
+          </div>
+        )}
+      </VisibilityContext.Provider>
     </>
   );
 }
