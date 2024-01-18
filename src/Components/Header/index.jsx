@@ -4,6 +4,9 @@ import Logo from "../../../public/default.png";
 import { useRef } from "react";
 import { VisibilityContext } from "../../context";
 import CardBio from "../CardBio";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointUp } from "@fortawesome/free-solid-svg-icons";
+import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
 
 function index({ handleContactClick, handleSobreMiClick }) {
   const { setIsVisible, isVisible } = useContext(VisibilityContext);
@@ -24,6 +27,11 @@ function index({ handleContactClick, handleSobreMiClick }) {
           >
             {`</Juanma`} <b className="md: hidden ml-6" />{" "}
             <span className=" md:inline ml-6">{`Garrido/>`}</span>
+            <FontAwesomeIcon
+              icon={faMousePointer}
+              className="animate-bounce mt-4 shadow-2xl"
+            />
+            <CardBio className={isVisible ? "slide-right" : "slide-left"} />
             <CardBio className="slide-right" />
           </a>
 
