@@ -13,6 +13,9 @@ export default {
         float: "float 2s infinite",
         moveInLeft: "moveInLeft 2s fowards",
       },
+      fontSize: {
+        "2xs": "0.8rem",
+      },
 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

@@ -6,7 +6,7 @@ const CardBio = () => {
 
   return (
     <div
-      className={`md:block hidden flex-row items-center space-x-2 fixed left-48 top-0 m-2  bg-indigo-700 rounded-lg shadow-3xl sm:w-48 sm:h-40 xl:h-20 xl:w-80 ${
+      className={`md:block hidden flex-row items-center space-x-2 fixed left-44 top-0 m-2  bg-indigo-700 rounded-lg shadow-3xl sm:w-48 sm:h-40 xl:h-20 xl:w-60 ${
         isVisible ? " opacity-100 slide-right" : "slide-left opacity-0"
       }`}
     >
@@ -18,9 +18,11 @@ const CardBio = () => {
         />
       </div>
       <div className="flex flex-row  pl-24 sm:mt-[-50px] sm:pl-10 xl:pl-20 xl:mt-[-60px]">
-        <h2 className="text-lg md:text-lg text-orange-400 ">Juanma Garrido</h2>
+        <h2 className="text-lg sm:text-2xs xl:text-2xs md:text-lg text-orange-400 ">
+          Juanma Garrido
+        </h2>
       </div>
-      <div className="flex flex-row pl-24 sm:pl-2 xl:pl-20">
+      <div className="flex flex-row xl:text-2xs pl-24 sm:pl-2 xl:pl-16">
         <a
           href="mailto:juanmagpdev@gmail.com"
           className="text-white xl:text-xs text-xs hover:underline"
@@ -28,7 +30,7 @@ const CardBio = () => {
           juanmagpdev@gmail.com
         </a>
       </div>
-      <div className="flex flex-row pl-24 sm:pl-2 xl:pl-20">
+      <div className="flex flex-row pl-24 sm:pl-2 xl:pl-16">
         <a
           href="https://github.com/juanmagp80"
           className="text-orange-200 text-lg hover:underline"
