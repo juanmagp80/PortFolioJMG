@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import city1 from "../../assets/city1.png";
+import nflix from "../../assets/nflix.png";
 import city2 from "../../assets/city2.png";
 import city3 from "../../assets/city3.png";
 import planet1 from "../../assets/planet1.png";
@@ -22,7 +22,7 @@ const OpenCards = () => {
     },
   };
 
-  const cardImages = [city1, city2, city3, planet1, planet2];
+  const cardImages = [nflix, city2, city3, planet1, planet2];
 
   const cardDescriptions = [
     "App de información sobre cine y series, realizada con React Native",
@@ -58,7 +58,7 @@ const OpenCards = () => {
               <div className="card-content h-full flex flex-col justify-end">
                 <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
                   <h2 className="text-xl font-semibold text-white text-center">
-                    Proyecto {index + 1}
+                    NFlix
                   </h2>
                   {index === expandedIndex && (
                     <p className="mt-2 text-white text-center">
