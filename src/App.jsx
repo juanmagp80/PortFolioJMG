@@ -10,6 +10,7 @@ import Footer from "./Components/Footer/index.jsx";
 import CardFlip from "./Components/CardFlip/index.jsx";
 
 import { VisibilityContext } from "./context/index.jsx";
+import OpenCards from "./Components/CardFlip/index.jsx";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,11 +64,10 @@ function App() {
             />
             <HorizontalCard />
             <HorizontalCard2 sobremiRef={sobremiRef} />
-            <CardFlip />
+            <OpenCards />
 
             <HorizontalCard3 />
             <HorizontalCard4 formRef={formRef} />
-            <CardFlip />
             <Footer />
           </div>
         )}
