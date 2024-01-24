@@ -52,7 +52,7 @@ export function HorizontalCard2({ sobremiRef }) {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 md:mt-20 font-poppins text-3xl md:text-3xl">
+              <Typography className="mt-4 md:mt-20 font-poppins text-black text-3xl md:text-3xl">
                 Quien Soy
               </Typography>
             </Fade>
@@ -62,7 +62,10 @@ export function HorizontalCard2({ sobremiRef }) {
             >
               Sobre mi
             </Typography>
-            <Typography color="gray" className="mb-8 font-normal text-left">
+            <Typography
+              color="gray"
+              className="mb-8 font-normal font-poppins text-black text-left"
+            >
               Hola, soy Juanma. Apasionado de la programación web y el
               desarrollo Front-end, busco constantemente expandir mis
               habilidades en este fascinante campo. Además de la tecnología, mi

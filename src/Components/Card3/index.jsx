@@ -43,7 +43,7 @@ export function HorizontalCard3() {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-1 md:mt-20 font-poppins text-2xl md:text-3xl">
+              <Typography className="mt-1 md:mt-20 text-black font-poppins text-2xl md:text-3xl">
                 Tecnologías
               </Typography>
             </Fade>
@@ -53,7 +53,10 @@ export function HorizontalCard3() {
             >
               Aprendizaje Constante
             </Typography>
-            <Typography color="gray" className="mb-8 font-normal text-left">
+            <Typography
+              color="gray"
+              className="mb-8 font-normal text-black font-poppins text-left"
+            >
               Mi trayecto en el mundo del desarrollo web ha sido emocionante y
               lleno de aprendizaje. Comencé con las bases: HTML para la
               estructura, CSS para el diseño y JavaScript para la

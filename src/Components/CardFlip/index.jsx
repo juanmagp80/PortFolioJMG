@@ -15,7 +15,7 @@ const OpenCards = () => {
 
   const cardVariants = {
     expanded: {
-      width: "400px",
+      width: "450px",
     },
     collapsed: {
       width: "200px",
@@ -23,7 +23,7 @@ const OpenCards = () => {
   };
   const cardImagePositions = [
     "center", // Posición para la primera imagen
-    "bottom", // Posición para la segunda imagen
+    "center", // Posición para la segunda imagen
     "bottom", // Posición para la tercera imagen
     "left", // Posición para la cuarta imagen
     "right", // P
@@ -40,11 +40,17 @@ const OpenCards = () => {
   const cardDescriptions = [
     "App de información sobre cine y series, realizada con React Native",
     "Réplica visual de spotify. Realizada con Astro, añadiendo componentes de Svelte y React. Tailwind como framework de CSS. Archivos de musica cargados localmente. ",
-    "This is a description, write whatever you need here, this is just text for a test",
-    "This is a description, write whatever you need here, this is just text for a test",
-    "This is a description, write whatever you need here, this is just text for a test",
+    "Proximamente....",
+    "Proximamente....",
+    "Proximamente....",
   ];
-  const cardTitles = ["NFlix", "HomeMusic", "City3", "Planet1", "Planet2"];
+  const cardTitles = [
+    "NFlix",
+    "HomeMusic",
+    "Proyecto3",
+    "Proyecto4",
+    "Proyecto5",
+  ];
   return (
     <div className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500">
       <section className="py-16 pb-[200px] md:h-[50rem] md:w-[85rem] shadow-3xl rounded-xl bg-blue-400">
@@ -76,8 +82,8 @@ const OpenCards = () => {
                     {cardTitles[index]}
                   </h2>
                   {index === expandedIndex && (
-                    <div className="flex flex-col items-center">
-                      <p className="mt-2 text-white text-center">
+                    <div className="flex font-poppins flex-col items-center">
+                      <p className="mt-2 font-poppins text-white text-center">
                         {cardDescriptions[index]}{" "}
                       </p>
                       <a

@@ -48,7 +48,7 @@ export function HorizontalCard4({ formRef }) {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 md:mt-20 font-poppins text-2xl md:text-3xl">
+              <Typography className="mt-4 md:mt-20 font-poppins text-black  text-2xl md:text-3xl">
                 Contacta conmigo
               </Typography>
             </Fade>

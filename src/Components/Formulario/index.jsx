@@ -23,7 +23,7 @@ const SignupForm = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-blue-400">
-      <h1 className="mb-5 text-2xl font-bold text-white">Contáctame</h1>
+      <h1 className="mt-5 text-2xl font-bold text-white">Contáctame</h1>
       <Formik
         initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
         validationSchema={Yup.object({
@@ -43,7 +43,7 @@ const SignupForm = () => {
           setSubmitting(false);
         }}
       >
-        <Form className="flex flex-col mb-20 p-6 bg-blue-400 border-2 rounded shadow-3xl space-y-4 w-72">
+        <Form className="flex flex-col mt-12 p-6 bg-blue-400 border-2 rounded shadow-3xl space-y-4 w-72">
           <label htmlFor="firstName" className="font-medium text-gray-700">
             Nombre
           </label>
