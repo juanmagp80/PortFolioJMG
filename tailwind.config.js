@@ -7,6 +7,13 @@ export default {
         none: "none",
         blur: "blur(20px)",
       },
+      backgroundPosition: {
+        top: "top",
+        bottom: "bottom",
+        left: "left",
+        right: "right",
+        center: "center",
+      },
       animation: {
         circle: "circle 2s infinite linear",
 
