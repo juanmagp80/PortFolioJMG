@@ -37,9 +37,9 @@ function index({
             <CardBio
               className={`${
                 isVisible ? "slide-right" : "slide-left"
-              } hidden lg:block`}
+              } md:hidden lg:block`}
             />
-            <CardBio className="slide-right hidden lg:block" />
+            <CardBio className="slide-right md:hidden lg:block" />
           </a>
 
           <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">
