@@ -22,14 +22,14 @@ export function HorizontalCard4({ formRef }) {
   });
   return (
     <div
-      className="flex justify-center items-center mt-40  bg-indigo-500"
+      className="flex justify-center items-center min-h-screen xl:h-[52rem] mt-40  bg-indigo-500"
       ref={formRef}
     >
-      <Card className="w-full max-w-[70rem] md:h-[42rem] flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden z-20 md:z-40">
+      <Card className=" max-w-[70rem] md:h-[42rem]  flex-col md:flex-row shadow-3xl bg-blue-400 overflow-hidden z-20 md:z-40">
         <CardHeader
           shadow={false}
           floated={false}
-          className="m-0 bg-blue-400 w-full md:w-2/5 shrink-0 rounded-r-none"
+          className="m-0 bg-blue-400  md:w-2/5 shrink-0 rounded-r-none"
         >
           <SignupForm />
         </CardHeader>
@@ -48,16 +48,20 @@ export function HorizontalCard4({ formRef }) {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 md:mt-20 font-poppins text-black  text-2xl md:text-3xl">
-                Contacta conmigo
-              </Typography>
+              <Fade
+                direction="left"
+                triggerOnce={false}
+                duration="1000"
+                opposite={true}
+                when={inView}
+              >
+                <img
+                  src="./email.png"
+                  alt="card-image"
+                  className="h-full w-full object-cover"
+                />
+              </Fade>
             </Fade>
-            <Typography
-              variant="h1"
-              className="mb-4 mt-4 font-poppins text-white font-bold md:text-5xl"
-            >
-              Estaré encantado de atenderte
-            </Typography>
           </CardBody>
         </Fade>
       </Card>

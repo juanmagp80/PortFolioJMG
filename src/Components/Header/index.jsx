@@ -6,7 +6,12 @@ import CardBio from "../CardBio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
 
-function index({ handleContactClick, handleSobreMiClick }) {
+function index({
+  handleContactClick,
+  handleSobreMiClick,
+  handleProyectosClick,
+  handleExperienciaClick,
+}) {
   const { setIsVisible, isVisible } = useContext(VisibilityContext);
   const handleClick = () => {
     setIsVisible(!isVisible);
@@ -40,23 +45,34 @@ function index({ handleContactClick, handleSobreMiClick }) {
                 className="text-white font-poppins text-base md:text-3xl lg:text-4l"
                 onClick={handleSobreMiClick}
               >
-                Sobre Mi
+                <span className="nav-item">
+                  Sobre mi
+                  <span className="underline"></span>
+                </span>
               </a>
             </li>
             <li>
               <a
                 href="#section2"
                 className="text-white font-poppins text-base md:text-3xl lg:text-4l"
+                onClick={handleProyectosClick}
               >
-                Proyectos
+                <span className="nav-item">
+                  Proyectos
+                  <span className="underline"></span>
+                </span>
               </a>
             </li>
             <li>
               <a
                 href="#section3"
                 className="text-white font-poppins text-base md:text-3xl lg:text-4l"
+                onClick={handleExperienciaClick}
               >
-                Experiencia
+                <span className="nav-item">
+                  Experiencia
+                  <span className="underline"></span>
+                </span>
               </a>
             </li>
           </ul>

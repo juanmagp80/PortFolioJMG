@@ -52,13 +52,13 @@ export function HorizontalCard2({ sobremiRef }) {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 md:mt-20 font-poppins text-black text-3xl md:text-3xl">
+              <Typography className="mt-4 md:mt-20 font-segoe text-black text-3xl md:text-3xl">
                 Quien Soy
               </Typography>
             </Fade>
             <Typography
               variant="h1"
-              className="mb-4 mt-4 font-poppins text-white font-bold text-4xl md:text-5xl"
+              className="mb-4 mt-4 font-segoe text-white font-bold text-4xl md:text-5xl"
             >
               Sobre mi
             </Typography>

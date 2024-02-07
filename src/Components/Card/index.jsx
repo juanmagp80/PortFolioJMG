@@ -52,19 +52,19 @@ export function HorizontalCard() {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 text-black md:mt-20 font-poppins text-2xl md:text-3xl uppercase">
+              <Typography className="mt-4 text-black md:mt-20 font-segoe text-3xl md:text-3xl uppercase">
                 FRONT-END DEVELOPER
               </Typography>
             </Fade>
             <Typography
               variant="h1"
-              className="mb-4 mt-4 font-poppins text-white font-bold text-4xl md:text-5xl"
+              className="mb-4 mt-4 font-segoe text-white font-bold text-4xl md:text-5xl"
             >
               Juanma Garrido
             </Typography>
             <Typography
               color="gray"
-              className="mb-6 font-normal font-poppins text-black text-left"
+              className="mb-6 font-normal font-segoe text-black text-left"
             >
               Entusiasta de la programación web, me sumerjo en el mundo del
               Front-end. Aunque estoy empezando en este mundo apasionante, mi

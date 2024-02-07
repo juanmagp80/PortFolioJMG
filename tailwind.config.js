@@ -26,6 +26,7 @@ export default {
 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        segoe: ["Segoe", "sans-serif"],
       },
       boxShadow: {
         "3xl": "4.0px 8.0px 8.0px rgba(0,0,0,0.38)",

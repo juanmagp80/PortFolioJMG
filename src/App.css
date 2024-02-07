@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
 
-  src: url("/src/Fonts/Poppins-Bold.ttf") format("woff2");
+@font-face {
+  font-family: "segoe";
+  font-style: normal;
+  font-weight: 600;
+
+  src: url("/src/Fonts/Segoe\ UI\ Bold.ttf") format("ttf");
 }
 @layer utilities {
   @keyframes circle {
@@ -140,4 +140,16 @@
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+.nav-item .underline {
+  display: block;
+  width: 0;
+  height: 4px; /* Ajusta esto para cambiar el grosor de la barra */
+  background: #fed7aa;
+  border-radius: 10px;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover .nav-item:hover .underline {
+  width: 100%;
 }

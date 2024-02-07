@@ -5,9 +5,14 @@ import city3 from "../../assets/city3.png";
 import planet1 from "../../assets/planet1.png";
 import planet2 from "../../assets/planet2.png";
 import HomeMusic from "../../assets/HomeMusic.jpg";
+import { useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
-const OpenCards = () => {
+const OpenCards = ({ proyectosRef }) => {
   const [expandedIndex, setExpandedIndex] = useState(null);
+  const { ref, inView, entry } = useInView({
+    triggerOnce: false,
+  });
 
   const handleCardClick = (index) => {
     setExpandedIndex(index === expandedIndex ? -1 : index);
@@ -52,7 +57,10 @@ const OpenCards = () => {
     "Proyecto5",
   ];
   return (
-    <div className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500">
+    <div
+      className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500"
+      ref={proyectosRef}
+    >
       <section className="py-16 pb-[200px] md:h-[50rem] md:w-[85rem] shadow-3xl rounded-xl bg-blue-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl font-extrabold font-poppins text-white">

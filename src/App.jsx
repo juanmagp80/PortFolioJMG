@@ -18,6 +18,8 @@ function App() {
   const formRef = useRef(null);
   const sobremiRef = useRef(null);
   const [loading, setLoading] = useState(true);
+  const proyectosRef = useRef(null);
+  const experienciaRef = useRef(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,6 +37,18 @@ function App() {
 
   const handleSobreMiClick = () => {
     sobremiRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+  const handleProyectosClick = () => {
+    proyectosRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+  const handleExperienciaClick = () => {
+    experienciaRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
     });
@@ -61,12 +75,14 @@ function App() {
             <Header
               handleContactClick={handleContactClick}
               handleSobreMiClick={handleSobreMiClick}
+              handleProyectosClick={handleProyectosClick}
+              handleExperienciaClick={handleExperienciaClick}
             />
             <HorizontalCard />
             <HorizontalCard2 sobremiRef={sobremiRef} />
-            <OpenCards />
+            <OpenCards proyectosRef={proyectosRef} />
 
-            <HorizontalCard3 />
+            <HorizontalCard3 experienciaRef={experienciaRef} />
             <HorizontalCard4 formRef={formRef} />
             <Footer />
           </div>

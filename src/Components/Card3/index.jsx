@@ -14,12 +14,15 @@ import Container from "../Container";
 import TechCircle from "../TechCircle";
 import AnimatedText from "../MovingIcon";
 
-export function HorizontalCard3() {
+export function HorizontalCard3({ experienciaRef }) {
   const { ref, inView } = useInView({
     triggerOnce: false,
   });
   return (
-    <div className="flex justify-center items-center  bg-indigo-500">
+    <div
+      className="flex justify-center items-center  bg-indigo-500"
+      ref={experienciaRef}
+    >
       <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
@@ -43,19 +46,19 @@ export function HorizontalCard3() {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-1 md:mt-20 text-black font-poppins text-2xl md:text-3xl">
+              <Typography className="mt-1 md:mt-20 text-black font-segoe text-2xl md:text-3xl">
                 Tecnologías
               </Typography>
             </Fade>
             <Typography
               variant="h1"
-              className="mb-4 mt-4 font-poppins text-white font-bold md:text-5xl"
+              className="mb-4 mt-4 font-segoe text-white font-bold md:text-5xl"
             >
               Aprendizaje Constante
             </Typography>
             <Typography
               color="gray"
-              className="mb-8 font-normal text-black font-poppins text-left"
+              className="mb-8 font-normal text-black font-segoe text-left"
             >
               Mi trayecto en el mundo del desarrollo web ha sido emocionante y
               lleno de aprendizaje. Comencé con las bases: HTML para la

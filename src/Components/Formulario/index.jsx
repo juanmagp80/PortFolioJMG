@@ -22,8 +22,10 @@ const SignupForm = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-blue-400">
-      <h1 className="mt-5 text-2xl font-bold text-white">Contáctame</h1>
+    <div className="flex flex-col items-center justify-center bg-blue-400">
+      <h1 className="mt-5 text-3xl font-bold font-segoe text-white">
+        Contáctame
+      </h1>
       <Formik
         initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
         validationSchema={Yup.object({
@@ -43,8 +45,11 @@ const SignupForm = () => {
           setSubmitting(false);
         }}
       >
-        <Form className="flex flex-col mt-12 p-6 bg-blue-400 border-2 rounded shadow-3xl space-y-4 w-72">
-          <label htmlFor="firstName" className="font-medium text-gray-700">
+        <Form className="flex flex-col mt-12 p-6 bg-indigo-500  rounded-xl shadow-3xl space-y-4 w-72">
+          <label
+            htmlFor="firstName"
+            className="font-medium font-segoe text-white"
+          >
             Nombre
           </label>
           <Field
@@ -54,7 +59,10 @@ const SignupForm = () => {
           />
           <ErrorMessage name="firstName" className="text-red-500" />
 
-          <label htmlFor="lastName" className="font-medium text-gray-700">
+          <label
+            htmlFor="lastName"
+            className="font-medium font-segoe text-white text-gray-700"
+          >
             Apellido
           </label>
           <Field
@@ -64,7 +72,7 @@ const SignupForm = () => {
           />
           <ErrorMessage name="lastName" className="text-red-500" />
 
-          <label htmlFor="email" className="font-medium text-gray-700">
+          <label htmlFor="email" className="font-medium font-segoe text-white">
             Correo Electrónico
           </label>
           <Field
@@ -74,7 +82,10 @@ const SignupForm = () => {
           />
           <ErrorMessage name="email" className="text-red-500" />
 
-          <label htmlFor="message" className="font-medium text-gray-700">
+          <label
+            htmlFor="message"
+            className="font-medium font-segoe text-white"
+          >
             Mensaje
           </label>
           <Field
@@ -86,7 +97,7 @@ const SignupForm = () => {
 
           <button
             type="submit"
-            className="p-2 rounded bg-blue-500 text-white mt-5 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="p-2 rounded-sm shadow-3xl bg-blue-500 text-white mt-5 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             Enviar
           </button>
@@ -106,7 +117,7 @@ const SignupForm = () => {
               className="hidden sm:inline-block sm:align-middle sm:h-screen"
               aria-hidden="true"
             >
-              &#8203;
+              &#8203
             </span>
 
             <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
@@ -146,7 +157,6 @@ const SignupForm = () => {
           </div>
         </div>
       )}
-      ;
     </div>
   );
 };
