@@ -5,6 +5,7 @@ import city3 from "../../assets/city3.png";
 import planet1 from "../../assets/planet1.png";
 import planet2 from "../../assets/planet2.png";
 import HomeMusic from "../../assets/HomeMusic.jpg";
+import weather from "../../assets/963shots_so.png";
 import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -36,23 +37,23 @@ const OpenCards = ({ proyectosRef }) => {
   const cardLinks = [
     "https://port-folio-jmg.vercel.app/",
     "https://homemusic.netlify.app/",
-    "https://port-folio-jmg.vercel.app/",
+    "https://thunderous-puffpuff-3c61b5.netlify.app/",
     "https://port-folio-jmg.vercel.app/",
     "https://port-folio-jmg.vercel.app/",
   ];
-  const cardImages = [nflix, HomeMusic, city3, planet1, planet2];
+  const cardImages = [nflix, HomeMusic, weather, planet1, planet2];
 
   const cardDescriptions = [
     "App de información sobre cine y series, realizada con React Native",
     "Réplica visual de spotify. Realizada con Astro, añadiendo componentes de Svelte y React. Tailwind como framework de CSS. Archivos de musica cargados localmente. ",
-    "Proximamente....",
+    "Web de información sobre el clima, realizada con React, estilos con Tailwind. Usando la API de WeatherAPI",
     "Proximamente....",
     "Proximamente....",
   ];
   const cardTitles = [
     "NFlix",
     "HomeMusic",
-    "Proyecto3",
+    "OpenWeather",
     "Proyecto4",
     "Proyecto5",
   ];
