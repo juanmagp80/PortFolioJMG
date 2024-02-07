@@ -26,7 +26,7 @@ function index({
         <nav className="flex px-2 py-4 justify-between z-30 fixed top-0 left-1 mb-5 w-full ">
           <a
             onClick={handleClick}
-            className=" text-white text-base text-center flex flex-col items-center text font-poppins md:text-3xl lg:text-4l"
+            className=" text-white text-base text-center flex flex-col items-center text font-raleway md:text-3xl lg:text-4l"
           >
             {`</Juanma`} <b className="md: hidden ml-6" />{" "}
             <span className=" md:inline ml-6">{`Garrido/>`}</span>
@@ -42,7 +42,7 @@ function index({
             <li>
               <a
                 href="#section1"
-                className="text-white font-poppins text-base md:text-3xl lg:text-4l"
+                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
                 onClick={handleSobreMiClick}
               >
                 <span className="nav-item">
@@ -54,7 +54,7 @@ function index({
             <li>
               <a
                 href="#section2"
-                className="text-white font-poppins text-base md:text-3xl lg:text-4l"
+                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
                 onClick={handleProyectosClick}
               >
                 <span className="nav-item">
@@ -66,7 +66,7 @@ function index({
             <li>
               <a
                 href="#section3"
-                className="text-white font-poppins text-base md:text-3xl lg:text-4l"
+                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
                 onClick={handleExperienciaClick}
               >
                 <span className="nav-item">
@@ -84,7 +84,7 @@ function index({
             <button
               onClick={handleContactClick}
               type="button"
-              className="text-xs md:text-sm border-2 border-indigo-50 border-solid bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-poppins rounded-lg px-3 py-1.5 md:px-5 md:py-2.5 text-center me-2 mb-2"
+              className="text-xs md:text-sm border-2 border-indigo-50 border-solid bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-raleway rounded-lg px-3 py-1.5 md:px-5 md:py-2.5 text-center me-2 mb-2"
             >
               Contáctame
             </button>

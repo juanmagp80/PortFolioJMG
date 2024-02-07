@@ -18,14 +18,14 @@ const CardBio = () => {
         />
       </div>
       <div className="flex flex-row  pl-24 sm:mt-[-50px] sm:pl-10 xl:pl-20 xl:mt-[-60px]">
-        <h2 className="text-lg sm:text-xl font-segoe xl:tex-3xs md:text-lg text-orange-400 ">
+        <h2 className="text-lg sm:text-xl font-raleway xl:tex-3xs md:text-lg text-orange-400 ">
           Juanma Garrido
         </h2>
       </div>
       <div className="flex flex-row xl:text-3xs pl-24 sm:pl-2 xl:pl-16">
         <a
           href="mailto:juanmagpdev@gmail.com"
-          className="text-white xl:text-2xs text-xs hover:underline font-segoe"
+          className="text-white xl:text-2xs text-xs hover:underline font-raleway"
         >
           juanmagpdev@gmail.com
         </a>
@@ -33,14 +33,14 @@ const CardBio = () => {
       <div className="flex flex-row pl-24 sm:pl-2 xl:pl-16">
         <a
           href="https://github.com/juanmagp80"
-          className="text-orange-200 text-lg font-segoe hover:underline"
+          className="text-orange-200 text-lg font-raleway hover:underline"
         >
           GitHub
         </a>
         <div className="flex flex-row pl-6">
           <a
             href="https://linkedin.com/in/juan-manuel-garrido-portillo/"
-            className="text-orange-200 text-lg hover:underline font-segoe"
+            className="text-orange-200 text-lg hover:underline font-raleway"
           >
             LinkedIn
           </a>

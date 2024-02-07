@@ -13,24 +13,20 @@ import { useInView } from "react-intersection-observer";
 import Container from "../Container";
 import TechCircle from "../TechCircle";
 import AnimatedText from "../MovingIcon";
+import Tecnologias from "../Tecnologías";
 
 export function HorizontalCard3({ experienciaRef }) {
   const { ref, inView } = useInView({
     triggerOnce: false,
   });
   return (
-    <div
-      className="flex justify-center items-center  bg-indigo-500"
-      ref={experienciaRef}
-    >
-      <Card className="w-full max-w-[70rem] md:h-[40rem] flex-col md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
+    <div className="flex justify-center   bg-indigo-500" ref={experienciaRef}>
+      <Card className=" max-w-[70rem] md:h-[40rem] md:flex-row shadow-3xl z-20 md:z-40 bg-blue-400 overflow-hidden">
         <CardHeader
           shadow={false}
           floated={false}
-          className=" bg-blue-400  md:w-2/5 shrink-0 rounded-r-none"
-        >
-          <AnimatedText />
-        </CardHeader>
+          className=" bg-blue-400  md:w-2/5  rounded-r-none"
+        ></CardHeader>
         <Fade
           direction="right"
           triggerOnce={false}
@@ -38,7 +34,7 @@ export function HorizontalCard3({ experienciaRef }) {
           opposite={true}
           when={inView}
         >
-          <CardBody>
+          <CardBody className="flex flex-col items-center justify-center">
             <Fade
               direction="right"
               triggerOnce={false}
@@ -46,19 +42,18 @@ export function HorizontalCard3({ experienciaRef }) {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-1 md:mt-20 text-black font-segoe text-2xl md:text-3xl">
+              <Typography
+                variant="h1"
+                className="mb-4 mt-4 font-raleway text-white font-bold text-4xl md:text-5xl"
+              >
                 Tecnologías
               </Typography>
+              <Tecnologias />
             </Fade>
-            <Typography
-              variant="h1"
-              className="mb-4 mt-4 font-segoe text-white font-bold md:text-5xl"
-            >
-              Aprendizaje Constante
-            </Typography>
+
             <Typography
               color="gray"
-              className="mb-8 font-normal text-black font-segoe text-left"
+              className="mb-8 font-normal text-black font-raleway text-left"
             >
               Mi trayecto en el mundo del desarrollo web ha sido emocionante y
               lleno de aprendizaje. Comencé con las bases: HTML para la

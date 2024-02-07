@@ -23,7 +23,7 @@ const SignupForm = () => {
 
   return (
     <div className="flex flex-col items-center justify-center bg-blue-400">
-      <h1 className="mt-5 text-3xl font-bold font-segoe text-white">
+      <h1 className="mt-5 text-3xl font-bold font-raleway text-white">
         Contáctame
       </h1>
       <Formik
@@ -48,7 +48,7 @@ const SignupForm = () => {
         <Form className="flex flex-col mt-12 p-6 bg-indigo-500  rounded-xl shadow-3xl space-y-4 w-72">
           <label
             htmlFor="firstName"
-            className="font-medium font-segoe text-white"
+            className="font-medium font-raleway text-white"
           >
             Nombre
           </label>
@@ -61,7 +61,7 @@ const SignupForm = () => {
 
           <label
             htmlFor="lastName"
-            className="font-medium font-segoe text-white text-gray-700"
+            className="font-medium font-raleway text-white"
           >
             Apellido
           </label>
@@ -72,7 +72,10 @@ const SignupForm = () => {
           />
           <ErrorMessage name="lastName" className="text-red-500" />
 
-          <label htmlFor="email" className="font-medium font-segoe text-white">
+          <label
+            htmlFor="email"
+            className="font-medium font-raleway text-white"
+          >
             Correo Electrónico
           </label>
           <Field
@@ -84,7 +87,7 @@ const SignupForm = () => {
 
           <label
             htmlFor="message"
-            className="font-medium font-segoe text-white"
+            className="font-medium font-raleway text-white"
           >
             Mensaje
           </label>
@@ -97,7 +100,7 @@ const SignupForm = () => {
 
           <button
             type="submit"
-            className="p-2 rounded-sm shadow-3xl bg-blue-500 text-white mt-5 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="p-2 rounded-sm shadow-3xl font-raleway bg-blue-500 text-white mt-5 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             Enviar
           </button>

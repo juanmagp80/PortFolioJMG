@@ -52,19 +52,19 @@ export function HorizontalCard2({ sobremiRef }) {
               opposite={true}
               when={inView}
             >
-              <Typography className="mt-4 md:mt-20 font-segoe text-black text-3xl md:text-3xl">
+              <Typography className="mt-4 md:mt-20 font-raleway text-black text-3xl md:text-3xl">
                 Quien Soy
               </Typography>
             </Fade>
             <Typography
               variant="h1"
-              className="mb-4 mt-4 font-segoe text-white font-bold text-4xl md:text-5xl"
+              className="mb-4 mt-4 font-raleway text-white font-bold text-4xl md:text-5xl"
             >
               Sobre mi
             </Typography>
             <Typography
               color="gray"
-              className="mb-8 font-normal font-poppins text-black text-left"
+              className="mb-8 font-normal font-raleway text-black text-left"
             >
               Hola, soy Juanma. Apasionado de la programación web y el
               desarrollo Front-end, busco constantemente expandir mis
