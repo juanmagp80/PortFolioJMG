@@ -32,7 +32,7 @@ function index({
             <span className=" md:inline ml-6">{`Garrido/>`}</span>
             <FontAwesomeIcon
               icon={faMousePointer}
-              className="animate-bounce mt-4 shadow-2xl"
+              className="animate-bounce mt-4 shadow-2xl hidden lg:block"
             />
             <CardBio className={isVisible ? "slide-right" : "slide-left"} />
             <CardBio className="slide-right" />
