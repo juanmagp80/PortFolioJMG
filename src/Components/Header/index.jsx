@@ -32,10 +32,14 @@ function index({
             <span className=" md:inline ml-6">{`Garrido/>`}</span>
             <FontAwesomeIcon
               icon={faMousePointer}
-              className="animate-bounce mt-4 shadow-2xl"
+              className="animate-bounce mt-4 shadow-2xl hidden lg:block"
             />
-            <CardBio className={isVisible ? "slide-right" : "slide-left"} />
-            <CardBio className="slide-right" />
+            <CardBio
+              className={`${
+                isVisible ? "slide-right" : "slide-left"
+              } md:hidden lg:block`}
+            />
+            <CardBio className="slide-right md:hidden lg:block" />
           </a>
 
           <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">

@@ -6,7 +6,7 @@ const CardBio = () => {
 
   return (
     <div
-      className={`md:block hidden flex-row items-center space-x-2 fixed left-44 top-0 m-2  bg-indigo-700 rounded-lg shadow-3xl sm:w-48 sm:h-40 xl:ml-4 xl:h-20 xl:w-64 ${
+      className={`hidden md:hidden lg:block flex-row items-center space-x-2 fixed left-44 top-0 m-2  bg-indigo-700 rounded-lg shadow-3xl sm:w-48 sm:h-40 xl:ml-4 xl:h-20 xl:w-64 ${
         isVisible ? " opacity-100 slide-right" : "slide-left opacity-0"
       }`}
     >
