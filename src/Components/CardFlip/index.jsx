@@ -5,7 +5,7 @@ import city3 from "../../assets/city3.png";
 import planet1 from "../../assets/planet1.png";
 import planet2 from "../../assets/planet2.png";
 import HomeMusic from "../../assets/HomeMusic.jpg";
-import weather from "../../assets/963shots_so.png";
+import weather from "../../assets/weather.png";
 import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -35,9 +35,9 @@ const OpenCards = ({ proyectosRef }) => {
     "right", // P
   ];
   const cardLinks = [
-    "https://port-folio-jmg.vercel.app/",
+    "https://drive.google.com/file/d/1_xNljfDnkf8oUENrGtruG7vvQm97aoLd/view?usp=sharing",
     "https://homemusic.netlify.app/",
-    "https://thunderous-puffpuff-3c61b5.netlify.app/",
+    "https://wheaterjmgp.netlify.app/",
     "https://port-folio-jmg.vercel.app/",
     "https://port-folio-jmg.vercel.app/",
   ];
@@ -68,11 +68,11 @@ const OpenCards = ({ proyectosRef }) => {
             Mis Proyectos
           </h1>
         </div>
-        <div className="mt-12 flex flex-col md:flex-row justify-center items-center gap-5">
+        <div className="mt-28 flex flex-col md:flex-row justify-center items-center gap-5">
           {[0, 1, 2, 3, 4].map((index) => (
             <motion.div
               key={index}
-              className={`card cursor-pointer h-[500px] bg-cover bg-center rounded-[20px] ${
+              className={`card cursor-pointer h-[300px] bg-cover bg-center rounded-[20px] ${
                 index === expandedIndex ? "expanded" : ""
               }`}
               variants={cardVariants}
@@ -83,16 +83,18 @@ const OpenCards = ({ proyectosRef }) => {
               style={{
                 backgroundPosition: cardImagePositions[index],
                 backgroundImage: `url(${cardImages[index]})`,
+                backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <div className="card-content h-full flex flex-col justify-end">
-                <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center">
-                  <h2 className="text-xl font-semibold text-white text-center">
+                <div className=" card-footer rounded-b-[10px] bg-gray-800 bg-opacity-75 min-h-[50px] flex flex-col items-center justify-center">
+                  <h2 className="text-xl font-semibold font-raleway text-white text-center">
                     {cardTitles[index]}
                   </h2>
                   {index === expandedIndex && (
-                    <div className="flex font-poppins flex-col items-center">
-                      <p className="mt-2 font-poppins text-white text-center">
+                    <div className="flex font-raleway flex-col items-center">
+                      <p className="mt-2 font-raleway text-white text-center">
                         {cardDescriptions[index]}{" "}
                       </p>
                       <a
@@ -101,7 +103,7 @@ const OpenCards = ({ proyectosRef }) => {
                         rel="noopener noreferrer"
                       >
                         <button className="mt-2 mb-2 shadow-3xl font-poppins  bg-blue-600 hover:bg-indigo-500 text-white font-bold py-2 px-4 rounded">
-                          Visitar sitio
+                          {index === 0 ? "Descargar archivo" : "Visitar Sitio"}
                         </button>
                       </a>
                     </div>
