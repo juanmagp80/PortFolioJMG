@@ -9,7 +9,6 @@ import HorizontalCard4 from "./Components/Card4/index.jsx";
 import Footer from "./Components/Footer/index.jsx";
 import CardFlip from "./Components/CardFlip/index.jsx";
 import Tecnologias from "./Components/Tecnologías/index.jsx";
-
 import { VisibilityContext } from "./context/index.jsx";
 import OpenCards from "./Components/CardFlip/index.jsx";
 

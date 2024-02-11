@@ -53,7 +53,7 @@ export function HorizontalCard() {
               when={inView}
             >
               <Typography className="mt-4 text-black md:mt-20 font-raleway text-3xl md:text-3xl uppercase">
-                FRONT-END DEVELOPER
+                FULL-STACK DEVELOPER
               </Typography>
             </Fade>
             <Typography
@@ -67,10 +67,10 @@ export function HorizontalCard() {
               className="mb-6 font-normal font-raleway text-black text-left"
             >
               Entusiasta de la programación web, me sumerjo en el mundo del
-              Front-end. Aunque estoy empezando en este mundo apasionante, mi
+              Full-Stack. Aunque estoy empezando en este mundo apasionante, mi
               dedicación por aprender es incansable. Apasionado por la creación
               de experiencias atractivas, estoy enfocado en perfeccionar mis
-              habilidades en el desarrollo Front-end y explorar nuevas
+              habilidades en el desarrollo Full-Stack y explorar nuevas
               tecnologías para impulsar la innovación en la web.
             </Typography>
             <div className="flex items-center">

@@ -74,7 +74,19 @@ function index({
                 onClick={handleExperienciaClick}
               >
                 <span className="nav-item">
-                  Experiencia
+                  Tecnologías
+                  <span className="underline"></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="../../../public/Juan Manuel Garrido.pdf"
+                download={true}
+                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
+              >
+                <span className="nav-item">
+                  CV
                   <span className="underline"></span>
                 </span>
               </a>

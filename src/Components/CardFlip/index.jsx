@@ -35,28 +35,19 @@ const OpenCards = ({ proyectosRef }) => {
     "right", // P
   ];
   const cardLinks = [
-    "https://drive.google.com/file/d/1_xNljfDnkf8oUENrGtruG7vvQm97aoLd/view?usp=sharing",
+    "../../assets/NFlix.apk",
     "https://homemusic.netlify.app/",
     "https://wheaterjmgp.netlify.app/",
-    "https://port-folio-jmg.vercel.app/",
-    "https://port-folio-jmg.vercel.app/",
   ];
-  const cardImages = [nflix, HomeMusic, weather, planet1, planet2];
+
+  const cardImages = [nflix, HomeMusic, weather];
 
   const cardDescriptions = [
     "App de información sobre cine y series, realizada con React Native",
     "Réplica visual de spotify. Realizada con Astro, añadiendo componentes de Svelte y React. Tailwind como framework de CSS. Archivos de musica cargados localmente. ",
     "Web de información sobre el clima, realizada con React, estilos con Tailwind. Usando la API de WeatherAPI",
-    "Proximamente....",
-    "Proximamente....",
   ];
-  const cardTitles = [
-    "NFlix",
-    "HomeMusic",
-    "OpenWeather",
-    "Proyecto4",
-    "Proyecto5",
-  ];
+  const cardTitles = ["NFlix", "HomeMusic", "OpenWeather"];
   return (
     <div
       className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500"
@@ -69,7 +60,7 @@ const OpenCards = ({ proyectosRef }) => {
           </h1>
         </div>
         <div className="mt-28 flex flex-col md:flex-row justify-center items-center gap-5">
-          {[0, 1, 2, 3, 4].map((index) => (
+          {[0, 1, 2].map((index) => (
             <motion.div
               key={index}
               className={`card cursor-pointer h-[300px] bg-cover bg-center rounded-[20px] ${
@@ -99,6 +90,7 @@ const OpenCards = ({ proyectosRef }) => {
                       </p>
                       <a
                         href={cardLinks[index]}
+                        download
                         target="_blank"
                         rel="noopener noreferrer"
                       >

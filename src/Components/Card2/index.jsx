@@ -66,14 +66,13 @@ export function HorizontalCard2({ sobremiRef }) {
               color="gray"
               className="mb-8 font-normal font-raleway text-black text-left"
             >
-              Hola, soy Juanma. Apasionado de la programación web y el
-              desarrollo Front-end, busco constantemente expandir mis
-              habilidades en este fascinante campo. Además de la tecnología, mi
-              corazón late al ritmo de la música; disfruto tocando varios
-              instrumentos y explorando nuevos sonidos. Cuando no estoy inmerso
-              en líneas de código, me sumerjo en el mundo del cine y las series,
-              encontrando inspiración en cada historia para alimentar mi
-              creatividad.
+              Hola, soy Juanma. Apasionado del desarrollo web y móvil, busco
+              constantemente expandir mis habilidades en este fascinante campo.
+              Además de la tecnología, mi corazón late al ritmo de la música;
+              disfruto tocando varios instrumentos y explorando nuevos sonidos.
+              Cuando no estoy inmerso en líneas de código, me sumerjo en el
+              mundo del cine y las series, encontrando inspiración en cada
+              historia para alimentar mi creatividad.
             </Typography>
           </CardBody>
         </Fade>
