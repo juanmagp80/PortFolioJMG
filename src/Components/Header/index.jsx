@@ -48,7 +48,7 @@ function index({
               <div className="flex p-3">
                 <button>
                   <img
-                    src="/public/espana.png"
+                    src="/assets/espana.png"
                     alt="Bandera Española"
                     width={30}
                     height={30}
@@ -59,7 +59,7 @@ function index({
               <div className="flex">
                 <button>
                   <img
-                    src="/public/reino-unido.png"
+                    src="/assets/reino-unido.png"
                     width={30}
                     height={30}
                     alt="Bandera Inglesa"
