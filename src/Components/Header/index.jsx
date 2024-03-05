@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import Logo from "../../../public/default.png";
-
 import { VisibilityContext } from "../../context";
 import CardBio from "../CardBio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
+import { FormattedMessage } from "react-intl";
 
 function index({
+  changeToSpanish,
+  changeToEnglish,
   handleContactClick,
   handleSobreMiClick,
   handleProyectosClick,
@@ -41,57 +43,82 @@ function index({
             />
             <CardBio className="slide-right md:hidden lg:block" />
           </a>
-
-          <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">
-            <li>
-              <a
-                href="#section1"
-                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
-                onClick={handleSobreMiClick}
-              >
-                <span className="nav-item">
-                  Sobre mi
-                  <span className="underline"></span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#section2"
-                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
-                onClick={handleProyectosClick}
-              >
-                <span className="nav-item">
-                  Proyectos
-                  <span className="underline"></span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#section3"
-                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
-                onClick={handleExperienciaClick}
-              >
-                <span className="nav-item">
-                  Tecnologías
-                  <span className="underline"></span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="../../../public/JuanManuelGarrido.pdf"
-                download="JuanManuelGarrido.pdf"
-                className="text-white font-raleway text-base md:text-3xl lg:text-4l"
-              >
-                <span className="nav-item">
-                  CV
-                  <span className="underline"></span>
-                </span>
-              </a>
-            </li>
-          </ul>
+          <div className="flex-col items-center">
+            <div className="flex items-center justify-center">
+              <div className="flex p-3">
+                <button>
+                  <img
+                    src="/public/espana.png"
+                    alt="Bandera Española"
+                    width={30}
+                    height={30}
+                    onClick={() => changeToSpanish("es")}
+                  />
+                </button>
+              </div>
+              <div className="flex">
+                <button>
+                  <img
+                    src="/public/reino-unido.png"
+                    width={30}
+                    height={30}
+                    alt="Bandera Inglesa"
+                    onClick={() => changeToEnglish("en")}
+                  />
+                </button>
+              </div>
+            </div>
+            <ul className="flex flex-col items-center md:items-center md:justify-between md:flex-row md:space-x-4 font-poppins text-white font-bold">
+              <li>
+                <a
+                  href="#section1"
+                  className="text-white font-raleway text-base md:text-3xl lg:text-4l"
+                  onClick={handleSobreMiClick}
+                >
+                  <span className="nav-item">
+                    <FormattedMessage id="Sobremi" />
+                    <span className="underline"></span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#section2"
+                  className="text-white font-raleway text-base md:text-3xl lg:text-4l"
+                  onClick={handleProyectosClick}
+                >
+                  <span className="nav-item">
+                    <FormattedMessage id="Proyectos" />
+                    <span className="underline"></span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#section3"
+                  className="text-white font-raleway text-base md:text-3xl lg:text-4l"
+                  onClick={handleExperienciaClick}
+                >
+                  <span className="nav-item">
+                    <FormattedMessage id="technologies" />{" "}
+                    <span className="underline"></span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="../../../public/JuanManuelGarrido.pdf"
+                  download="JuanManuelGarrido.pdf"
+                  className="text-white font-raleway text-base md:text-3xl lg:text-4l"
+                >
+                  <span className="nav-item">
+                    CV
+                    <span className="underline"></span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <a
             href="#_"
             className="relative inline-block text-sm md:text-lg group"
@@ -102,7 +129,7 @@ function index({
               type="button"
               className="text-xs md:text-sm border-2 border-indigo-50 border-solid bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-raleway rounded-lg px-3 py-1.5 md:px-5 md:py-2.5 text-center me-2 mb-2"
             >
-              Contáctame
+              <FormattedMessage id="Contact" />
             </button>
           </a>
         </nav>

@@ -1,14 +1,10 @@
-import React, { useState } from "react";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 import nflix from "../../assets/nflix.png";
-import city3 from "../../assets/city3.png";
-import planet1 from "../../assets/planet1.png";
-import planet2 from "../../assets/planet2.png";
 import HomeMusic from "../../assets/HomeMusic.jpg";
 import weather from "../../assets/weather.png";
-import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
-
+import { FormattedMessage } from "react-intl";
 const OpenCards = ({ proyectosRef }) => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const { ref, inView, entry } = useInView({
@@ -41,12 +37,10 @@ const OpenCards = ({ proyectosRef }) => {
   ];
 
   const cardImages = [nflix, HomeMusic, weather];
-
-  const cardDescriptions = [
-    "App de información sobre cine y series, realizada con React Native",
-    "Réplica visual de spotify. Realizada con Astro, añadiendo componentes de Svelte y React. Tailwind como framework de CSS. Archivos de musica cargados localmente. ",
-    "Web de información sobre el clima, realizada con React, estilos con Tailwind. Usando la API de WeatherAPI",
-  ];
+  const nflixtext = <FormattedMessage id="nflixtext" />;
+  const homemusictext = <FormattedMessage id="homemusictext" />;
+  const openweathertext = <FormattedMessage id="openweathertext" />;
+  const cardDescriptions = [nflixtext, homemusictext, openweathertext];
   const cardTitles = ["NFlix", "HomeMusic", "OpenWeather"];
   return (
     <div
@@ -56,7 +50,7 @@ const OpenCards = ({ proyectosRef }) => {
       <section className="py-16 pb-[200px] md:h-[50rem] md:w-[85rem] shadow-3xl rounded-xl bg-blue-400">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-extrabold font-raleway text-white">
-            Mis Proyectos
+            <FormattedMessage id="misproyectos" />
           </h1>
         </div>
         <div className="mt-28 flex flex-col md:flex-row justify-center items-center gap-5">

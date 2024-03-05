@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import emailjs from "emailjs-com";
+import { FormattedMessage } from "react-intl";
 const YOUR_SERVICE_ID = "service_sjaritn";
 const YOUR_TEMPLATE_ID = "template_bs46f1g";
 const YOUR_USER_ID = "DMEF8cSmTjBogDrcA";
@@ -24,7 +25,7 @@ const SignupForm = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-blue-400">
       <h1 className="mt-5 text-3xl font-bold font-raleway text-white">
-        Contáctame
+        <FormattedMessage id="Contact" />
       </h1>
       <Formik
         initialValues={{ firstName: "", lastName: "", email: "", message: "" }}
@@ -50,7 +51,7 @@ const SignupForm = () => {
             htmlFor="firstName"
             className="font-medium font-raleway text-white"
           >
-            Nombre
+            <FormattedMessage id="nombre" />
           </label>
           <Field
             name="firstName"
@@ -63,7 +64,7 @@ const SignupForm = () => {
             htmlFor="lastName"
             className="font-medium font-raleway text-white"
           >
-            Apellido
+            <FormattedMessage id="apellido" />
           </label>
           <Field
             name="lastName"
@@ -76,7 +77,7 @@ const SignupForm = () => {
             htmlFor="email"
             className="font-medium font-raleway text-white"
           >
-            Correo Electrónico
+            <FormattedMessage id="correo" />
           </label>
           <Field
             name="email"
@@ -89,7 +90,7 @@ const SignupForm = () => {
             htmlFor="message"
             className="font-medium font-raleway text-white"
           >
-            Mensaje
+            <FormattedMessage id="mensaje" />
           </label>
           <Field
             name="message"
@@ -102,7 +103,7 @@ const SignupForm = () => {
             type="submit"
             className="p-2 rounded-sm shadow-3xl font-raleway bg-blue-500 text-white mt-5 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            Enviar
+            <FormattedMessage id="enviar" />
           </button>
         </Form>
       </Formik>

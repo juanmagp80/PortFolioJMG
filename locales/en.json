@@ -1,0 +1,21 @@
+{
+  "technologies": "Technologies",
+  "cv": "CV",
+  "Contact": "Contact",
+  "Sobremi": "About me",
+  "Proyectos": "Projects",
+  "JuanmaGarrido": "Web programming enthusiast, I immerse myself in the world of Full-Stack. Although I am starting in this exciting world, my dedication to learning is tireless. Passionate about creation of attractive experiences, I am focused on perfecting my skills in Full-Stack development and explore new technologies to drive innovation on the web.",
+  "QuienSoy": "Hello, I'm Juanma. Passionate about web and mobile development, I am constantly seeking to expand my skills in this fascinating field. In addition to technology, my heart beats to the rhythm of music; I enjoy playing various instruments and exploring new sounds. When I'm not immersed in lines of code, I immerse myself in the world of movies and series, finding inspiration in each story to fuel my creativity.",
+  "quiensoytitulo": "Who am I?",
+  "sobremititulo": "About me",
+  "misproyectos": "My projects",
+  "nflixtext": "Information app about movies and series, made with React Native",
+  "homemusictext": "Visual replica of spotify. Made with Astro, adding Svelte and React components. Tailwind as CSS framework. Music files loaded locally.",
+  "openweathertext": "Weather information website, made with React, styles with Tailwind. Using the WeatherAPI API",
+  "tecnologiastext": "My journey in the world of web development has been exciting and full of learning. I started with the basics: HTML for the structure, CSS for the design and JavaScript for the interactivity. Then, I moved towards libraries like React, which gave me have allowed the creation of more dynamic applications. Furthermore, I have explored tools like Tailwind and Bootstrap to streamline the development. In the area of ​​version management, I I became familiar with Git and Github for version control and collaboration on projects. I have complemented my learning with certifications from platforms such as Udemy, Platzi and Codecademy, obtaining the Meta Front-End Developer certificate, validated by Coursera. I remain committed to continuous learning and excited to continue exploring new technologies in this Exciting field of web development.",
+  "nombre": "Name",
+  "apellido": "Last name",
+  "correo": "Email",
+  "mensaje": "Message",
+  "enviar": "Send"
+}

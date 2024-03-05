@@ -1,20 +1,10 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Button,
-} from "@material-tailwind/react";
+import { Card, CardHeader, CardBody } from "@material-tailwind/react";
 import SignupForm from "../Formulario";
 
-import { useEffect } from "react";
-import { useState } from "react";
-import { useRef } from "react";
 import "../../App.css";
 import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
-import Container from "../Container";
-import TechCircle from "../TechCircle";
+import { FormattedMessage } from "react-intl";
 
 export function HorizontalCard4({ formRef }) {
   const { ref, inView } = useInView({

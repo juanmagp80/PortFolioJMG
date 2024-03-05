@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
+import { FormattedMessage } from "react-intl";
 
 export function HorizontalCard() {
   const { ref, inView } = useInView({
@@ -66,12 +67,7 @@ export function HorizontalCard() {
               color="gray"
               className="mb-6 font-normal font-raleway text-black text-left"
             >
-              Entusiasta de la programación web, me sumerjo en el mundo del
-              Full-Stack. Aunque estoy empezando en este mundo apasionante, mi
-              dedicación por aprender es incansable. Apasionado por la creación
-              de experiencias atractivas, estoy enfocado en perfeccionar mis
-              habilidades en el desarrollo Full-Stack y explorar nuevas
-              tecnologías para impulsar la innovación en la web.
+              <FormattedMessage id="JuanmaGarrido" />
             </Typography>
             <div className="flex items-center">
               <a href="https://github.com/juanmagp80" className="inline-block">

@@ -1,0 +1,22 @@
+{
+  "technologies": "Tecnologías",
+  "cv": "CV",
+  "Contact": "Contáctame",
+  "Sobremi": "Sobre mi",
+  "Proyectos": "Proyectos",
+  "JuanmaGarrido": "Entusiasta de la programación web, me sumerjo en el mundo del Full-Stack. Aunque estoy empezando en este mundo apasionante, mi dedicación por aprender es incansable. Apasionado por la creación de experiencias atractivas, estoy enfocado en perfeccionar mis habilidades en el desarrollo Full-Stack y explorar nuevas tecnologías para impulsar la innovación en la web.",
+  "QuienSoy": "Hola, soy Juanma. Apasionado del desarrollo web y móvil, busco constantemente expandir mis habilidades en este fascinante campo. Además de la tecnología, mi corazón late al ritmo de la música; disfruto tocando varios instrumentos y explorando nuevos sonidos. Cuando no estoy inmerso en líneas de código, me sumerjo en el mundo del cine y las series, encontrando inspiración en cada historia para alimentar mi creatividad.",
+  "quiensoytitulo": "¿Quién soy?",
+  "sobremititulo": "Sobre mi",
+  "misproyectos": "Mis proyectos",
+
+  "nflixtext": "App de información sobre cine y series, realizada con React Native",
+  "homemusictext": "Réplica visual de spotify. Realizada con Astro, añadiendo componentes de Svelte y React. Tailwind como framework de CSS. Archivos de musica cargados localmente.",
+  "openweathertext": "Web de información sobre el clima, realizada con React, estilos con Tailwind. Usando la API de WeatherAPI",
+  "tecnologiastext": " Mi trayecto en el mundo del desarrollo web ha sido emocionante y lleno de aprendizaje. Comencé con las bases: HTML para la estructura, CSS para el diseño y JavaScript para la interactividad. Luego, avancé hacia librerías como React, que me han permitido crear aplicaciones más dinámicas. Además, he explorado herramientas como Tailwind y Bootstrap para agilizar el desarrollo. En el ámbito de la gestión de versiones, me familiaricé con Git y Github para control de versiones y colaboración en proyectos. He complementado mi aprendizaje con certificaciones de plataformas como Udemy, Platzi y Codecademy, obteniendo el certificado de Front-End Developer de Meta, validado por Coursera. Sigo comprometido con el aprendizaje continuo y emocionado por seguir explorando nuevas tecnologías en este apasionante campo del desarrollo web.",
+  "nombre": "Nombre",
+  "apellido": "Apellidos",
+  "correo": "Correo Electrónico",
+  "mensaje": "Mensaje",
+  "enviar": "Enviar"
+}

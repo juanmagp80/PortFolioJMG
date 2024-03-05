@@ -7,12 +7,27 @@ import HorizontalCard2 from "./Components/Card2/index.jsx";
 import HorizontalCard3 from "./Components/Card3/index.jsx";
 import HorizontalCard4 from "./Components/Card4/index.jsx";
 import Footer from "./Components/Footer/index.jsx";
-import CardFlip from "./Components/CardFlip/index.jsx";
-import Tecnologias from "./Components/Tecnologías/index.jsx";
 import { VisibilityContext } from "./context/index.jsx";
 import OpenCards from "./Components/CardFlip/index.jsx";
+import { IntlProvider } from "react-intl";
+import enMessages from "../locales/en.json";
+import esMessages from "../locales/es.json";
+
+const messages = {
+  en: enMessages,
+  es: esMessages,
+};
 
 function App() {
+  const [locale, setLocale] = useState("es");
+  const changeToSpanish = () => {
+    setLocale("es");
+  };
+
+  const changeToEnglish = () => {
+    setLocale("en");
+  };
+
   const [isVisible, setIsVisible] = useState(false);
 
   const formRef = useRef(null);
@@ -56,38 +71,42 @@ function App() {
 
   return (
     <>
-      <VisibilityContext.Provider value={{ isVisible, setIsVisible }}>
-        <CSSTransition
-          in={loading}
-          timeout={1000}
-          classNames="fade"
-          unmountOnExit
-        >
-          <div className="flex flex-col items-center justify-center h-screen bg-blue-500">
-            <img className="w-72 h-72" src={"./waving.png"} alt="logo" />
-            <p className="text-white text-3xl font-poppins">
-              ¡Hola! Soy Juanma
-            </p>
-          </div>
-        </CSSTransition>
-        {!loading && (
-          <div className="App bg-indigo-500 pt-2 min-h-screen">
-            <Header
-              handleContactClick={handleContactClick}
-              handleSobreMiClick={handleSobreMiClick}
-              handleProyectosClick={handleProyectosClick}
-              handleExperienciaClick={handleExperienciaClick}
-            />
-            <HorizontalCard />
-            <HorizontalCard2 sobremiRef={sobremiRef} />
-            <OpenCards proyectosRef={proyectosRef} />
+      <IntlProvider locale={locale} messages={messages[locale]}>
+        <VisibilityContext.Provider value={{ isVisible, setIsVisible }}>
+          <CSSTransition
+            in={loading}
+            timeout={1000}
+            classNames="fade"
+            unmountOnExit
+          >
+            <div className="flex flex-col items-center justify-center h-screen bg-blue-500">
+              <img className="w-72 h-72" src={"./waving.png"} alt="logo" />
+              <p className="text-white text-3xl font-poppins">
+                ¡Hola! Soy Juanma
+              </p>
+            </div>
+          </CSSTransition>
+          {!loading && (
+            <div className="App bg-indigo-500 pt-2 min-h-screen">
+              <Header
+                changeToSpanish={changeToSpanish}
+                changeToEnglish={changeToEnglish}
+                handleContactClick={handleContactClick}
+                handleSobreMiClick={handleSobreMiClick}
+                handleProyectosClick={handleProyectosClick}
+                handleExperienciaClick={handleExperienciaClick}
+              />
+              <HorizontalCard />
+              <HorizontalCard2 sobremiRef={sobremiRef} />
+              <OpenCards proyectosRef={proyectosRef} />
 
-            <HorizontalCard3 experienciaRef={experienciaRef} />
-            <HorizontalCard4 formRef={formRef} />
-            <Footer />
-          </div>
-        )}
-      </VisibilityContext.Provider>
+              <HorizontalCard3 experienciaRef={experienciaRef} />
+              <HorizontalCard4 formRef={formRef} />
+              <Footer />
+            </div>
+          )}
+        </VisibilityContext.Provider>
+      </IntlProvider>
     </>
   );
 }

@@ -3,17 +3,12 @@ import {
   CardHeader,
   CardBody,
   Typography,
-  Button,
 } from "@material-tailwind/react";
-import { useEffect } from "react";
-import { useState } from "react";
 import "../../App.css";
 import { Fade } from "react-awesome-reveal";
 import { useInView } from "react-intersection-observer";
-import Container from "../Container";
-import TechCircle from "../TechCircle";
-import AnimatedText from "../MovingIcon";
 import Tecnologias from "../Tecnologías";
+import { FormattedMessage } from "react-intl";
 
 export function HorizontalCard3({ experienciaRef }) {
   const { ref, inView } = useInView({
@@ -46,7 +41,7 @@ export function HorizontalCard3({ experienciaRef }) {
                 variant="h1"
                 className="mb-4 mt-4 font-raleway text-white font-bold text-4xl md:text-5xl"
               >
-                Tecnologías
+                <FormattedMessage id="technologies" />
               </Typography>
               <Tecnologias />
             </Fade>
@@ -55,20 +50,7 @@ export function HorizontalCard3({ experienciaRef }) {
               color="gray"
               className="mb-8 font-normal text-black font-raleway text-left"
             >
-              Mi trayecto en el mundo del desarrollo web ha sido emocionante y
-              lleno de aprendizaje. Comencé con las bases: HTML para la
-              estructura, CSS para el diseño y JavaScript para la
-              interactividad. Luego, avancé hacia librerías como React, que me
-              han permitido crear aplicaciones más dinámicas. Además, he
-              explorado herramientas como Tailwind y Bootstrap para agilizar el
-              desarrollo. En el ámbito de la gestión de versiones, me
-              familiaricé con Git y Github para control de versiones y
-              colaboración en proyectos. He complementado mi aprendizaje con
-              certificaciones de plataformas como Udemy, Platzi y Codecademy,
-              obteniendo el certificado de Front-End Developer de Meta, validado
-              por Coursera. Sigo comprometido con el aprendizaje continuo y
-              emocionado por seguir explorando nuevas tecnologías en este
-              apasionante campo del desarrollo web.
+              <FormattedMessage id="tecnologiastext" />
             </Typography>
           </CardBody>
         </Fade>
