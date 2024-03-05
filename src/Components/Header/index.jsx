@@ -82,7 +82,7 @@ function index({
             <li>
               <a
                 href="../../../public/Juan Manuel Garrido.pdf"
-                download={true}
+                download="Juan Manuel Garrido.pdf"
                 className="text-white font-raleway text-base md:text-3xl lg:text-4l"
               >
                 <span className="nav-item">
