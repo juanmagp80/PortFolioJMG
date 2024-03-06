@@ -6,13 +6,13 @@ const CardBio = () => {
 
   return (
     <div
-      className={`hidden md:hidden lg:block flex-row items-center space-x-2 fixed left-44 top-0 m-2  bg-indigo-700 rounded-lg shadow-3xl sm:w-48 sm:h-40 xl:ml-4 xl:h-20 xl:w-64 ${
+      className={`hidden md:hidden lg:block flex-row items-center space-x-2 sm:fixed sm:left-40 fixed left-44 top-0 m-2  bg-indigo-700 rounded-lg shadow-3xl sm:w-56 sm:h-40 xl:ml-4 xl:h-20 xl:w-56 ${
         isVisible ? " opacity-100 slide-right" : "slide-left opacity-0"
       }`}
     >
-      <div className="flex flex-row mt-[-10px]">
+      <div className="flex xl:w-20 sm:w-20 flex-row mt-[-10px]">
         <img
-          className="w-20 h-20 rounded-full"
+          className="w-20 sm:w-18 h-20 rounded-full"
           src="./sonrisa.png"
           alt="Tu nombre"
         />
@@ -37,10 +37,10 @@ const CardBio = () => {
         >
           GitHub
         </a>
-        <div className="flex flex-row pl-6">
+        <div className="flex  flex-row pl-6">
           <a
             href="https://linkedin.com/in/juan-manuel-garrido-portillo/"
-            className="text-orange-200 text-lg hover:underline font-raleway"
+            className="text-orange-200 sm:mr-2 text-lg hover:underline font-raleway"
           >
             LinkedIn
           </a>
