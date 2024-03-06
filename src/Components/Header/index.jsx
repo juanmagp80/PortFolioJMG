@@ -5,7 +5,8 @@ import CardBio from "../CardBio";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMousePointer } from "@fortawesome/free-solid-svg-icons";
 import { FormattedMessage } from "react-intl";
-
+import espana from "./public/espana.png";
+import reinoUnido from "./public/reino-unido.png";
 function index({
   changeToSpanish,
   changeToEnglish,
@@ -48,7 +49,7 @@ function index({
               <div className="flex p-3">
                 <button>
                   <img
-                    src="/public/espana.png"
+                    src={espana}
                     alt="Bandera Española"
                     width={30}
                     height={30}
@@ -59,7 +60,7 @@ function index({
               <div className="flex">
                 <button>
                   <img
-                    src="/public/reino-unido.png"
+                    src={reinoUnido}
                     width={30}
                     height={30}
                     alt="Bandera Inglesa"
