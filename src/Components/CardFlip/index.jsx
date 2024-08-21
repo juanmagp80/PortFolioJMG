@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import nflix from "../../assets/nflix.png";
-import HomeMusic from "../../assets/HomeMusic.jpg";
-import weather from "../../assets/weather.png";
 import { useInView } from "react-intersection-observer";
 import { FormattedMessage } from "react-intl";
+import farmacia from "../../assets/farmacia.png";
+import HomeMusic from "../../assets/HomeMusic.jpg";
+import nflix from "../../assets/nflix.png";
+import weather from "../../assets/weather.png";
 const OpenCards = ({ proyectosRef }) => {
   const [expandedIndex, setExpandedIndex] = useState(null);
   const { ref, inView, entry } = useInView({
@@ -34,14 +35,16 @@ const OpenCards = ({ proyectosRef }) => {
     "../../assets/NFlix.apk",
     "https://homemusic.netlify.app/",
     "https://wheaterjmgp.netlify.app/",
+    "https://farmaciasantamaria.vercel.app/"
   ];
 
-  const cardImages = [nflix, HomeMusic, weather];
+  const cardImages = [nflix, HomeMusic, weather, farmacia];
   const nflixtext = <FormattedMessage id="nflixtext" />;
   const homemusictext = <FormattedMessage id="homemusictext" />;
   const openweathertext = <FormattedMessage id="openweathertext" />;
-  const cardDescriptions = [nflixtext, homemusictext, openweathertext];
-  const cardTitles = ["NFlix", "HomeMusic", "OpenWeather"];
+  const farmaciatext = <FormattedMessage id="farmaciatext" />;
+  const cardDescriptions = [nflixtext, homemusictext, openweathertext, farmaciatext];
+  const cardTitles = ["NFlix", "HomeMusic", "OpenWeather", "Farmacia Santa María"];
   return (
     <div
       className="flex justify-center rounded-xl items-center mb-40 bg-indigo-500"
@@ -54,12 +57,11 @@ const OpenCards = ({ proyectosRef }) => {
           </h1>
         </div>
         <div className="mt-28 flex flex-col md:flex-row justify-center items-center gap-5">
-          {[0, 1, 2].map((index) => (
+          {[0, 1, 2, 3].map((index) => (
             <motion.div
               key={index}
-              className={`card cursor-pointer h-[300px] bg-cover bg-center rounded-[20px] ${
-                index === expandedIndex ? "expanded" : ""
-              }`}
+              className={`card cursor-pointer h-[300px] bg-cover bg-center rounded-[20px] ${index === expandedIndex ? "expanded" : ""
+                }`}
               variants={cardVariants}
               initial="collapsed"
               animate={index === expandedIndex ? "expanded" : "collapsed"}
